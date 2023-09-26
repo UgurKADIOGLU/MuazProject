@@ -16,7 +16,7 @@ public class Product {
     @Id
     @SequenceGenerator(name = "product_id_generator",sequenceName = "product_id_seq",
     allocationSize = 1,initialValue = 1)
-    @
+
     private Long id;
     @Column(name = "product_name",unique = true)
     private String name;

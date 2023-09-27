@@ -1,27 +1,20 @@
-package com.example.deneme.entities;
+package com.example.deneme.dto;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-@Table(name = "products")
 @Builder
-public class Product {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    @Column(name = "product_name",  nullable = false)
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class ProductResponseDto {
+    Long id;
     private String name;
     private String description;
     private Double price;
     private Integer stock;
     private Boolean isActive;
     private String category;
-
 }

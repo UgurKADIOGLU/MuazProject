@@ -1,5 +1,7 @@
 package com.example.deneme.api;
 
+import com.example.deneme.dto.ProductDto;
+import com.example.deneme.dto.ProductResponseDto;
 import com.example.deneme.entities.Product;
 import com.example.deneme.service.ProdutService;
 import lombok.RequiredArgsConstructor;
@@ -19,8 +21,8 @@ public class ProductApi {
     }
 
     @PostMapping
-    public Product save(@RequestBody Product product) {
-        return produtService.save(product);
+    public ProductResponseDto save(@RequestBody ProductDto productDto) {
+        return produtService.save(productDto);
     }
     @GetMapping("{id}")
     public Product findById(@PathVariable Long id) {

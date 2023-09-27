@@ -9,4 +9,5 @@ public interface ProductDao extends JpaRepository<Product,Long> {
     Product findByName(String name);
 
     List<Product> findAllByPriceGreaterThanEqual(Double price);
+
 }

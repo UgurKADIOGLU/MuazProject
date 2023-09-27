@@ -1,7 +1,9 @@
 package com.example.deneme.api;
 
+import com.example.deneme.converter.ProductMapper;
 import com.example.deneme.dto.ProductDto;
 import com.example.deneme.dto.ProductResponseDto;
+import com.example.deneme.dto.ProductUpdateDto;
 import com.example.deneme.entities.Product;
 import com.example.deneme.service.ProdutService;
 import lombok.RequiredArgsConstructor;
@@ -16,7 +18,7 @@ public class ProductApi {
     private final ProdutService produtService;
 
     @GetMapping
-    public List<Product> findAll() {
+    public List<ProductResponseDto> findAll() {
         return produtService.findAll();
     }
 
@@ -35,5 +37,11 @@ public class ProductApi {
     @GetMapping("/price/{price}")
     public List<Product> findByName(@PathVariable Double price){
         return produtService.findAllByPriceGreaterThanEqual(price);
+    }
+    @PutMapping
+    public ProductResponseDto update(ProductUpdateDto productUpdateDto){
+        Product product= ProductMapper.INSTANCE.convertToProduct(productUpdateDto);
+        return produtService.update(product);
+
     }
 }

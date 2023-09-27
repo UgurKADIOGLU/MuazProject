@@ -1782,3 +1782,288 @@ org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique co
 2023-09-27T11:18:02.745+03:00  INFO 9680 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2023-09-27T11:18:02.749+03:00  INFO 9680 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
 2023-09-27T11:18:04.383+03:00  INFO 9680 --- [http-nio-8081-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 543 ms
+2023-09-27T11:51:23.335+03:00  INFO 9680 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-27T11:51:23.346+03:00  INFO 9680 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-27T11:51:23.359+03:00  INFO 9680 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-27T11:59:14.530+03:00  INFO 9288 --- [main] com.example.deneme.DenemeApplication     : Starting DenemeApplication using Java 17.0.6 with PID 9288 (C:\Users\UgurKADIOGLU\Desktop\demo\deneme\target\classes started by UgurKADIOGLU in C:\Users\UgurKADIOGLU\Desktop\demo\deneme)
+2023-09-27T11:59:14.538+03:00  INFO 9288 --- [main] com.example.deneme.DenemeApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-09-27T11:59:18.143+03:00  INFO 9288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-27T11:59:18.364+03:00  INFO 9288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 190 ms. Found 1 JPA repository interfaces.
+2023-09-27T11:59:20.458+03:00  INFO 9288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-09-27T11:59:20.491+03:00  INFO 9288 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-27T11:59:20.492+03:00  INFO 9288 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-09-27T11:59:20.872+03:00  INFO 9288 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-27T11:59:20.874+03:00  INFO 9288 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5928 ms
+2023-09-27T11:59:21.495+03:00  INFO 9288 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-27T11:59:21.808+03:00  INFO 9288 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-09-27T11:59:21.817+03:00  INFO 9288 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-27T11:59:22.528+03:00  INFO 9288 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-27T11:59:23.041+03:00  INFO 9288 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-27T11:59:23.090+03:00  INFO 9288 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-27T11:59:23.852+03:00  INFO 9288 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@23ea8830
+2023-09-27T11:59:23.857+03:00  INFO 9288 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-27T11:59:24.962+03:00  INFO 9288 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-27T11:59:26.958+03:00  INFO 9288 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-27T11:59:27.193+03:00  INFO 9288 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-27T11:59:28.296+03:00  WARN 9288 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-27T11:59:30.434+03:00  INFO 9288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-09-27T11:59:30.456+03:00  INFO 9288 --- [main] com.example.deneme.DenemeApplication     : Started DenemeApplication in 17.696 seconds (process running for 20.163)
+2023-09-27T12:01:43.968+03:00  INFO 9288 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-27T12:01:43.969+03:00  INFO 9288 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-27T12:01:43.977+03:00  INFO 9288 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2023-09-27T12:01:45.992+03:00  INFO 9288 --- [http-nio-8081-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 1025 ms
+2023-09-27T11:35:33.127+03:00  INFO 9288 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-27T11:35:33.172+03:00  INFO 9288 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-27T11:35:33.192+03:00  INFO 9288 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-27T11:35:58.204+03:00  INFO 11832 --- [main] com.example.deneme.DenemeApplication     : Starting DenemeApplication using Java 17.0.6 with PID 11832 (C:\Users\UgurKADIOGLU\Desktop\demo\deneme\target\classes started by UgurKADIOGLU in C:\Users\UgurKADIOGLU\Desktop\demo\deneme)
+2023-09-27T11:35:58.208+03:00  INFO 11832 --- [main] com.example.deneme.DenemeApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-09-27T11:36:02.596+03:00  INFO 11832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-27T11:36:02.737+03:00  INFO 11832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 104 ms. Found 1 JPA repository interfaces.
+2023-09-27T11:36:03.759+03:00  INFO 11832 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-09-27T11:36:03.778+03:00  INFO 11832 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-27T11:36:03.778+03:00  INFO 11832 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-09-27T11:36:03.946+03:00  INFO 11832 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-27T11:36:03.947+03:00  INFO 11832 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5379 ms
+2023-09-27T11:36:04.279+03:00  INFO 11832 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-27T11:36:04.431+03:00  INFO 11832 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-09-27T11:36:04.435+03:00  INFO 11832 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-27T11:36:04.754+03:00  INFO 11832 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-27T11:36:05.040+03:00  INFO 11832 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-27T11:36:05.074+03:00  INFO 11832 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-27T11:36:05.412+03:00  INFO 11832 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1b3a9ef4
+2023-09-27T11:36:05.415+03:00  INFO 11832 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-27T11:36:06.008+03:00  INFO 11832 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-27T11:36:07.099+03:00  INFO 11832 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-27T11:36:07.182+03:00  INFO 11832 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-27T11:36:08.019+03:00  WARN 11832 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-27T11:36:09.925+03:00  INFO 11832 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-09-27T11:36:09.942+03:00  INFO 11832 --- [main] com.example.deneme.DenemeApplication     : Started DenemeApplication in 12.964 seconds (process running for 15.487)
+2023-09-27T11:36:12.486+03:00  INFO 11832 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-27T11:36:12.486+03:00  INFO 11832 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-27T11:36:12.489+03:00  INFO 11832 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-09-27T11:59:27.289+03:00  INFO 11832 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-27T11:59:27.614+03:00  INFO 11832 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-27T11:59:27.657+03:00  INFO 11832 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-27T11:59:44.599+03:00  INFO 8792 --- [main] com.example.deneme.DenemeApplication     : Starting DenemeApplication using Java 17.0.6 with PID 8792 (C:\Users\UgurKADIOGLU\Desktop\demo\deneme\target\classes started by UgurKADIOGLU in C:\Users\UgurKADIOGLU\Desktop\demo\deneme)
+2023-09-27T11:59:44.618+03:00  INFO 8792 --- [main] com.example.deneme.DenemeApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-09-27T11:59:47.107+03:00  INFO 8792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-27T11:59:47.272+03:00  INFO 8792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 147 ms. Found 1 JPA repository interfaces.
+2023-09-27T11:59:48.483+03:00  INFO 8792 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-09-27T11:59:48.506+03:00  INFO 8792 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-27T11:59:48.507+03:00  INFO 8792 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-09-27T11:59:48.761+03:00  INFO 8792 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-27T11:59:48.762+03:00  INFO 8792 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3951 ms
+2023-09-27T11:59:49.105+03:00  INFO 8792 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-27T11:59:49.271+03:00  INFO 8792 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-09-27T11:59:49.276+03:00  INFO 8792 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-27T11:59:49.816+03:00  INFO 8792 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-27T11:59:50.209+03:00  INFO 8792 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-27T11:59:50.250+03:00  INFO 8792 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-27T11:59:50.643+03:00  INFO 8792 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3120495d
+2023-09-27T11:59:50.646+03:00  INFO 8792 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-27T11:59:51.389+03:00  INFO 8792 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-27T11:59:53.169+03:00  INFO 8792 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-27T11:59:53.278+03:00  INFO 8792 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-27T11:59:54.080+03:00  WARN 8792 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-27T11:59:55.951+03:00  INFO 8792 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-09-27T11:59:55.969+03:00  INFO 8792 --- [main] com.example.deneme.DenemeApplication     : Started DenemeApplication in 12.769 seconds (process running for 15.149)
+2023-09-27T12:00:03.435+03:00  INFO 8792 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-27T12:00:03.436+03:00  INFO 8792 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-27T12:00:03.439+03:00  INFO 8792 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-09-27T11:03:25.997+03:00  INFO 8792 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-27T11:03:26.000+03:00  INFO 8792 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-27T11:03:26.014+03:00  INFO 8792 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-27T11:03:33.315+03:00  INFO 908 --- [main] com.example.deneme.DenemeApplication     : Starting DenemeApplication using Java 17.0.6 with PID 908 (C:\Users\UgurKADIOGLU\Desktop\demo\deneme\target\classes started by UgurKADIOGLU in C:\Users\UgurKADIOGLU\Desktop\demo\deneme)
+2023-09-27T11:03:33.321+03:00  INFO 908 --- [main] com.example.deneme.DenemeApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-09-27T11:03:35.077+03:00  INFO 908 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-27T11:03:35.592+03:00  INFO 908 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 497 ms. Found 1 JPA repository interfaces.
+2023-09-27T11:03:36.372+03:00  INFO 908 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-09-27T11:03:36.543+03:00  INFO 908 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3081 ms
+2023-09-27T11:03:36.791+03:00  INFO 908 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-27T11:03:36.870+03:00  INFO 908 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-09-27T11:03:36.873+03:00  INFO 908 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-27T11:03:37.108+03:00  INFO 908 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-27T11:03:37.305+03:00  INFO 908 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-27T11:03:37.333+03:00  INFO 908 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-27T11:03:37.585+03:00  INFO 908 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@70c491b8
+2023-09-27T11:03:37.589+03:00  INFO 908 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-27T11:03:38.014+03:00  INFO 908 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-27T11:03:39.071+03:00  INFO 908 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-27T11:03:39.147+03:00  INFO 908 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-27T11:03:39.819+03:00  WARN 908 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-27T11:03:41.382+03:00  INFO 908 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-09-27T11:03:41.397+03:00  INFO 908 --- [main] com.example.deneme.DenemeApplication     : Started DenemeApplication in 9.084 seconds (process running for 10.554)
+2023-09-27T11:03:41.426+03:00  INFO 908 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-27T11:03:41.429+03:00  INFO 908 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-27T11:03:41.443+03:00  INFO 908 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-27T11:04:08.214+03:00  INFO 8500 --- [main] com.example.deneme.DenemeApplication     : Starting DenemeApplication using Java 17.0.6 with PID 8500 (C:\Users\UgurKADIOGLU\Desktop\demo\deneme\target\classes started by UgurKADIOGLU in C:\Users\UgurKADIOGLU\Desktop\demo\deneme)
+2023-09-27T11:04:08.221+03:00  INFO 8500 --- [main] com.example.deneme.DenemeApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-09-27T11:04:09.818+03:00  INFO 8500 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-27T11:04:09.936+03:00  INFO 8500 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93 ms. Found 1 JPA repository interfaces.
+2023-09-27T11:04:10.932+03:00  INFO 8500 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-09-27T11:04:10.949+03:00  INFO 8500 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-27T11:04:10.950+03:00  INFO 8500 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-09-27T11:04:11.130+03:00  INFO 8500 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-27T11:04:11.130+03:00  INFO 8500 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2757 ms
+2023-09-27T11:04:11.413+03:00  INFO 8500 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-27T11:04:11.509+03:00  INFO 8500 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-09-27T11:04:11.514+03:00  INFO 8500 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-27T11:04:11.856+03:00  INFO 8500 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-27T11:04:12.221+03:00  INFO 8500 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-27T11:04:12.264+03:00  INFO 8500 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-27T11:04:12.597+03:00  INFO 8500 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@20b829d5
+2023-09-27T11:04:12.601+03:00  INFO 8500 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-27T11:04:13.298+03:00  INFO 8500 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-27T11:04:14.541+03:00  INFO 8500 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-27T11:04:14.626+03:00  INFO 8500 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-27T11:04:15.559+03:00  WARN 8500 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-27T11:04:17.307+03:00  INFO 8500 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-09-27T11:04:17.324+03:00  INFO 8500 --- [main] com.example.deneme.DenemeApplication     : Started DenemeApplication in 10.245 seconds (process running for 12.454)
+2023-09-27T11:04:22.683+03:00  INFO 8500 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-27T11:04:22.684+03:00  INFO 8500 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-27T11:04:22.686+03:00  INFO 8500 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-09-27T11:05:00.447+03:00  WARN 8500 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47s740ms192µs600ns).
+2023-09-27T11:08:07.602+03:00  WARN 8500 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m25s738ms886µs300ns).
+2023-09-27T11:08:07.717+03:00  INFO 8500 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-27T11:08:07.723+03:00  INFO 8500 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-27T11:08:07.734+03:00  INFO 8500 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-27T11:08:13.399+03:00  INFO 11168 --- [main] com.example.deneme.DenemeApplication     : Starting DenemeApplication using Java 17.0.6 with PID 11168 (C:\Users\UgurKADIOGLU\Desktop\demo\deneme\target\classes started by UgurKADIOGLU in C:\Users\UgurKADIOGLU\Desktop\demo\deneme)
+2023-09-27T11:08:13.405+03:00  INFO 11168 --- [main] com.example.deneme.DenemeApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-09-27T11:08:15.848+03:00  INFO 11168 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-27T11:08:15.986+03:00  INFO 11168 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 117 ms. Found 1 JPA repository interfaces.
+2023-09-27T11:08:16.872+03:00  INFO 11168 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-09-27T11:08:16.891+03:00  INFO 11168 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-27T11:08:16.892+03:00  INFO 11168 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-09-27T11:08:17.067+03:00  INFO 11168 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-27T11:08:17.067+03:00  INFO 11168 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3523 ms
+2023-09-27T11:08:17.352+03:00  INFO 11168 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-27T11:08:17.433+03:00  INFO 11168 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-09-27T11:08:17.437+03:00  INFO 11168 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-27T11:08:17.669+03:00  INFO 11168 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-27T11:08:17.872+03:00  INFO 11168 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-27T11:08:17.897+03:00  INFO 11168 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-27T11:08:18.169+03:00  INFO 11168 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1b3a9ef4
+2023-09-27T11:08:18.173+03:00  INFO 11168 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-27T11:08:18.624+03:00  INFO 11168 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-27T11:08:19.587+03:00  INFO 11168 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-27T11:08:19.657+03:00  INFO 11168 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-27T11:08:20.361+03:00  WARN 11168 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-27T11:08:21.947+03:00  INFO 11168 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-09-27T11:08:21.963+03:00  INFO 11168 --- [main] com.example.deneme.DenemeApplication     : Started DenemeApplication in 9.552 seconds (process running for 11.032)
+2023-09-27T11:08:26.343+03:00  INFO 11168 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-27T11:08:26.344+03:00  INFO 11168 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-27T11:08:26.347+03:00  INFO 11168 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-09-27T11:11:08.506+03:00  INFO 11168 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-27T11:11:08.510+03:00  INFO 11168 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-27T11:11:08.524+03:00  INFO 11168 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-27T11:11:18.938+03:00  INFO 11392 --- [main] com.example.deneme.DenemeApplication     : Starting DenemeApplication using Java 17.0.6 with PID 11392 (C:\Users\UgurKADIOGLU\Desktop\demo\deneme\target\classes started by UgurKADIOGLU in C:\Users\UgurKADIOGLU\Desktop\demo\deneme)
+2023-09-27T11:11:18.944+03:00  INFO 11392 --- [main] com.example.deneme.DenemeApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-09-27T11:11:20.524+03:00  INFO 11392 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-27T11:11:20.620+03:00  INFO 11392 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 1 JPA repository interfaces.
+2023-09-27T11:11:21.421+03:00  INFO 11392 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-09-27T11:11:21.436+03:00  INFO 11392 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-27T11:11:21.437+03:00  INFO 11392 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-09-27T11:11:21.590+03:00  INFO 11392 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-27T11:11:21.591+03:00  INFO 11392 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2535 ms
+2023-09-27T11:11:21.827+03:00  INFO 11392 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-27T11:11:21.910+03:00  INFO 11392 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-09-27T11:11:21.913+03:00  INFO 11392 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-27T11:11:22.154+03:00  INFO 11392 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-27T11:11:22.366+03:00  INFO 11392 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-27T11:11:22.396+03:00  INFO 11392 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-27T11:11:22.680+03:00  INFO 11392 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1a0f349
+2023-09-27T11:11:22.687+03:00  INFO 11392 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-27T11:11:23.350+03:00  INFO 11392 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-27T11:11:24.481+03:00  INFO 11392 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-27T11:11:24.552+03:00  INFO 11392 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-27T11:11:25.236+03:00  WARN 11392 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-27T11:11:26.787+03:00  INFO 11392 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-09-27T11:11:26.802+03:00  INFO 11392 --- [main] com.example.deneme.DenemeApplication     : Started DenemeApplication in 8.821 seconds (process running for 10.33)
+2023-09-27T11:11:27.464+03:00  INFO 11392 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-27T11:11:27.467+03:00  INFO 11392 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-27T11:11:27.481+03:00  INFO 11392 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-27T11:11:34.775+03:00  INFO 5664 --- [main] com.example.deneme.DenemeApplication     : Starting DenemeApplication using Java 17.0.6 with PID 5664 (C:\Users\UgurKADIOGLU\Desktop\demo\deneme\target\classes started by UgurKADIOGLU in C:\Users\UgurKADIOGLU\Desktop\demo\deneme)
+2023-09-27T11:11:34.781+03:00  INFO 5664 --- [main] com.example.deneme.DenemeApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-09-27T11:11:36.604+03:00  INFO 5664 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-27T11:11:36.723+03:00  INFO 5664 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 101 ms. Found 1 JPA repository interfaces.
+2023-09-27T11:11:37.886+03:00  INFO 5664 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-09-27T11:11:37.911+03:00  INFO 5664 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-27T11:11:37.911+03:00  INFO 5664 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-09-27T11:11:38.145+03:00  INFO 5664 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-27T11:11:38.146+03:00  INFO 5664 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3203 ms
+2023-09-27T11:11:38.471+03:00  INFO 5664 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-27T11:11:38.611+03:00  INFO 5664 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-09-27T11:11:38.616+03:00  INFO 5664 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-27T11:11:38.954+03:00  INFO 5664 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-27T11:11:39.226+03:00  INFO 5664 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-27T11:11:39.255+03:00  INFO 5664 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-27T11:11:39.560+03:00  INFO 5664 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@510da778
+2023-09-27T11:11:39.564+03:00  INFO 5664 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-27T11:11:40.123+03:00  INFO 5664 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-27T11:11:41.323+03:00  INFO 5664 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-27T11:11:41.405+03:00  INFO 5664 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-27T11:11:42.264+03:00  WARN 5664 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-27T11:11:44.037+03:00  INFO 5664 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-09-27T11:11:44.054+03:00  INFO 5664 --- [main] com.example.deneme.DenemeApplication     : Started DenemeApplication in 10.418 seconds (process running for 12.229)
+2023-09-27T11:11:52.086+03:00  INFO 5664 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-27T11:11:52.087+03:00  INFO 5664 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-27T11:11:52.090+03:00  INFO 5664 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-09-27T11:14:16.182+03:00  WARN 5664 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m4s478ms626µs700ns).
+2023-09-27T11:14:16.436+03:00  INFO 5664 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-27T11:14:16.442+03:00  INFO 5664 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-27T11:14:16.468+03:00  INFO 5664 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-27T11:14:27.381+03:00  INFO 6348 --- [main] com.example.deneme.DenemeApplication     : Starting DenemeApplication using Java 17.0.6 with PID 6348 (C:\Users\UgurKADIOGLU\Desktop\demo\deneme\target\classes started by UgurKADIOGLU in C:\Users\UgurKADIOGLU\Desktop\demo\deneme)
+2023-09-27T11:14:27.388+03:00  INFO 6348 --- [main] com.example.deneme.DenemeApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-09-27T11:14:29.188+03:00  INFO 6348 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-27T11:14:29.300+03:00  INFO 6348 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 97 ms. Found 1 JPA repository interfaces.
+2023-09-27T11:14:30.268+03:00  INFO 6348 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-09-27T11:14:30.286+03:00  INFO 6348 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-27T11:14:30.286+03:00  INFO 6348 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-09-27T11:14:30.474+03:00  INFO 6348 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-27T11:14:30.475+03:00  INFO 6348 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2929 ms
+2023-09-27T11:14:30.761+03:00  INFO 6348 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-27T11:14:30.865+03:00  INFO 6348 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-09-27T11:14:30.869+03:00  INFO 6348 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-27T11:14:31.150+03:00  INFO 6348 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-27T11:14:31.410+03:00  INFO 6348 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-27T11:14:31.439+03:00  INFO 6348 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-27T11:14:31.731+03:00  INFO 6348 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@bf2aa32
+2023-09-27T11:14:31.735+03:00  INFO 6348 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-27T11:14:32.303+03:00  INFO 6348 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-27T11:14:33.451+03:00  INFO 6348 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-27T11:14:33.534+03:00  INFO 6348 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-27T11:14:34.342+03:00  WARN 6348 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-27T11:14:36.087+03:00  INFO 6348 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-09-27T11:14:36.103+03:00  INFO 6348 --- [main] com.example.deneme.DenemeApplication     : Started DenemeApplication in 9.811 seconds (process running for 11.59)
+2023-09-27T11:14:41.216+03:00  INFO 6348 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-27T11:14:41.217+03:00  INFO 6348 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-27T11:14:41.220+03:00  INFO 6348 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-09-27T11:17:19.504+03:00  WARN 6348 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m16s850ms792µs100ns).
+2023-09-27T11:18:06.344+03:00  WARN 6348 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46s841ms93µs500ns).
+2023-09-27T11:36:39.182+03:00  WARN 6348 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m2s404ms455µs700ns).
+2023-09-27T11:36:39.449+03:00  INFO 6348 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-27T11:36:39.466+03:00  INFO 6348 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-27T11:36:39.481+03:00  INFO 6348 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-27T11:37:27.660+03:00  INFO 6128 --- [main] com.example.deneme.DenemeApplication     : Starting DenemeApplication using Java 17.0.6 with PID 6128 (C:\Users\UgurKADIOGLU\Desktop\demo\deneme\target\classes started by UgurKADIOGLU in C:\Users\UgurKADIOGLU\Desktop\demo\deneme)
+2023-09-27T11:37:27.675+03:00  INFO 6128 --- [main] com.example.deneme.DenemeApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-09-27T11:37:31.764+03:00  INFO 6128 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-27T11:37:31.947+03:00  INFO 6128 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 132 ms. Found 1 JPA repository interfaces.
+2023-09-27T11:37:33.055+03:00  INFO 6128 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-09-27T11:37:33.075+03:00  INFO 6128 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-27T11:37:33.075+03:00  INFO 6128 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-09-27T11:37:33.246+03:00  INFO 6128 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-27T11:37:33.247+03:00  INFO 6128 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5410 ms
+2023-09-27T11:37:33.545+03:00  INFO 6128 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-27T11:37:33.705+03:00  INFO 6128 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-09-27T11:37:33.711+03:00  INFO 6128 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-27T11:37:34.092+03:00  INFO 6128 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-27T11:37:34.379+03:00  INFO 6128 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-27T11:37:34.412+03:00  INFO 6128 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-27T11:37:34.733+03:00  INFO 6128 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1b3a9ef4
+2023-09-27T11:37:34.736+03:00  INFO 6128 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-27T11:37:35.318+03:00  INFO 6128 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-27T11:37:36.604+03:00  INFO 6128 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-27T11:37:36.687+03:00  INFO 6128 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-27T11:37:37.537+03:00  WARN 6128 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-27T11:37:39.448+03:00  INFO 6128 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-09-27T11:37:39.476+03:00  INFO 6128 --- [main] com.example.deneme.DenemeApplication     : Started DenemeApplication in 13.483 seconds (process running for 15.154)

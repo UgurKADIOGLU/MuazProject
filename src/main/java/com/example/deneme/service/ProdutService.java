@@ -5,8 +5,9 @@ import com.example.deneme.converter.ProductMapper;
 import com.example.deneme.dao.ProductDao;
 import com.example.deneme.dto.ProductDto;
 import com.example.deneme.dto.ProductResponseDto;
-import com.example.deneme.dto.ProductUpdateDto;
 import com.example.deneme.entities.Product;
+import com.example.deneme.exception.ProductNameExistException;
+import com.example.deneme.exception.ProductNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -20,6 +21,8 @@ public class ProdutService {
     //private final ProductMapper productMapper;
 
     public ProductResponseDto save(ProductDto productDto) {
+        if (productDao.existsByName(productDto.getName()))
+            throw new ProductNameExistException(productDto.getName());
         Product product = ProductMapper.INSTANCE.convertToProduct(productDto);
         Product save = productDao.save(product);
 
@@ -28,11 +31,17 @@ public class ProdutService {
 
     public List<ProductResponseDto> findAll() {
 
-        return ProductMapper.INSTANCE.convertToProductResponseDtoList(productDao.findAll());
+        List<ProductResponseDto> dto = ProductMapper.INSTANCE.convertToProductResponseDtoList(productDao.findAll());
+        return dto;
     }
 
     public Product findById(Long id) {
-        return productDao.findById(id).orElse(null);
+
+        Product product = productDao.findById(id).orElseThrow(() -> {
+            RuntimeException exception = new ProductNotFoundException(id);
+            return exception;
+        });
+        return product;
     }
 
     public Product findByName(String name) {

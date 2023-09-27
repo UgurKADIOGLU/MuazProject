@@ -19,7 +19,8 @@ public class ProductApi {
 
     @GetMapping
     public List<ProductResponseDto> findAll() {
-        return produtService.findAll();
+         List<ProductResponseDto> dto=produtService.findAll();
+         return dto;
     }
 
     @PostMapping

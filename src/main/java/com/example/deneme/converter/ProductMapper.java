@@ -22,5 +22,5 @@ public interface ProductMapper {
     @Mapping(target = "category.id", source = "categoryId")
     Product convertToProdu(ProductUpdateDto productUpdateDto);
 
-    List<ProductResponseDto> convertToProductResponseDtoList(List<Product> products);
+    List<ProductResponseDto> convertToProductResponseDtoLis(List<Product> products);
 }

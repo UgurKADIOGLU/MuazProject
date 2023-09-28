@@ -38,7 +38,7 @@ public class ProdutService {
 
     public List<ProductResponseDto> findAll() {
 
-        List<ProductResponseDto> dto = ProductMapper.INSTANCE.convertToProductResponseDtoList(productDao.findAll());
+        List<ProductResponseDto> dto = ProductMapper.INSTANCE.convertToProductResponseDtoLis(productDao.findAll());
         return dto;
     }
 

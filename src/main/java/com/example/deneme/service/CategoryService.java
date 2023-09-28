@@ -11,9 +11,11 @@ import com.example.deneme.dto.ProductDto;
 import com.example.deneme.dto.ProductResponseDto;
 import com.example.deneme.entities.Category;
 import com.example.deneme.entities.Product;
+import com.example.deneme.exception.CateGoryNotFoundException;
 import com.example.deneme.exception.ProductNameExistException;
 import com.example.deneme.exception.ProductNotFoundException;
 import lombok.RequiredArgsConstructor;
+import org.mapstruct.Mapper;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -40,5 +42,23 @@ public class CategoryService {
         Category categorySave=categoryDao.save(category);
         return CategoryMapper.INSTANCE.map(categorySave);
     }
+    public List<Category> findAll(){
+        return categoryDao.findAll();
+    }
 
+    public List<CategoryResponseDto> findAllMapper() {
+        return CategoryMapper.INSTANCE.map(categoryDao.findAll());
+    }
+    public List<CategoryResponseDto> findAllConverter() {
+        return categoryConverter.map(categoryDao.findAll());
+    }
+    public Category findById(Long id){
+        return categoryDao.findById(id).orElseThrow(()->new CateGoryNotFoundException(id));
+    }
+    public CategoryResponseDto findByIdConverter(Long id){
+        return categoryConverter.map(categoryDao.findById(id).orElseThrow(()->new CateGoryNotFoundException(id)));
+    }
+    public CategoryResponseDto findByIdMapper(Long id){
+        return CategoryMapper.INSTANCE.map(categoryDao.findById(id).orElseThrow(() -> new CateGoryNotFoundException(id)));
+    }
 }

@@ -11,9 +11,6 @@ import org.antlr.v4.runtime.atn.AmbiguityInfo;
 
 @Builder
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
-
 public class ProductDto {
     @NotNull(message = "Product can nut be null")
     private String name;
@@ -23,5 +20,5 @@ public class ProductDto {
     private Double price;
     private Integer stock;
     private Boolean isActive;
-    private String category;
+    private Long categoryId;
 }

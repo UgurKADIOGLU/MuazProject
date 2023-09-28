@@ -5,6 +5,7 @@ import com.example.deneme.dto.ProductResponseDto;
 import com.example.deneme.dto.ProductUpdateDto;
 import com.example.deneme.entities.Product;
 import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
 import org.mapstruct.ReportingPolicy;
 import org.mapstruct.factory.Mappers;
 
@@ -14,8 +15,12 @@ import java.util.List;
 public interface ProductMapper {
     ProductMapper INSTANCE = Mappers.getMapper(ProductMapper.class);
 
-    Product convertToProducts(ProductDto productDto);
-    ProductResponseDto convertToProductResponseDto(Product product);
-    Product convertToProducts(ProductUpdateDto productUpdateDto);
+    @Mapping(target = "category.id", source = "categoryId")
+    Product convertToProdu(ProductDto productDto);
+    @Mapping(target = "categoryId", source = "category.id")
+    ProductResponseDto convertToProductResponseDt(Product product);
+    @Mapping(target = "category.id", source = "categoryId")
+    Product convertToProdu(ProductUpdateDto productUpdateDto);
+
     List<ProductResponseDto> convertToProductResponseDtoList(List<Product> products);
 }

@@ -42,7 +42,7 @@ public class ProductApi {
     }
     @PutMapping
     public ProductResponseDto update(ProductUpdateDto productUpdateDto){
-        Product product= ProductMapper.INSTANCE.convertToProducts(productUpdateDto);
+        Product product= ProductMapper.INSTANCE.convertToProdu(productUpdateDto);
         return produtService.update(product);
 
     }

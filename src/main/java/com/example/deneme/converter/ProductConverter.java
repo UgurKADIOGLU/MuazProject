@@ -12,7 +12,7 @@ public class ProductConverter {
                 .name(productDto.getName())
                 .description(productDto.getDescription())
                 .price(productDto.getPrice())
-                .category(productDto.getCategory())
+                //.category(productDto.getCategory())
                 .stock(productDto.getStock())
                 .isActive(productDto.getIsActive())
                 .build();
@@ -24,7 +24,7 @@ public class ProductConverter {
                 .name(product.getName())
                 .description(product.getDescription())
                 .price(product.getPrice())
-                .category(product.getCategory())
+                //.category(product.getCategory())
                 .stock(product.getStock())
                 .isActive(product.getIsActive())
                 .build();

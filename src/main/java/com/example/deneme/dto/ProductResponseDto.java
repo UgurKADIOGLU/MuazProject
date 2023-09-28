@@ -16,5 +16,5 @@ public class ProductResponseDto {
     private Double price;
     private Integer stock;
     private Boolean isActive;
-    private String category;
+    private Long categoryId;
 }

@@ -8,9 +8,7 @@ import com.example.deneme.dto.ProductResponseDto;
 import com.example.deneme.entities.Product;
 import com.example.deneme.exception.ProductNameExistException;
 import com.example.deneme.exception.ProductNotFoundException;
-import com.example.deneme.helper.LogHelperService;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -30,9 +28,9 @@ public class ProdutService {
         if (productDao.existsByName(productDto.getName()))
             throw new ProductNameExistException(productDto.getName());
 
-        Product product = ProductMapper.INSTANCE.convertToProducts(productDto);
+        Product product = ProductMapper.INSTANCE.convertToProdu(productDto);
         Product productSave = productDao.save(product);
-        ProductResponseDto responseDto=ProductMapper.INSTANCE.convertToProductResponseDto(productSave);
+        ProductResponseDto responseDto=ProductMapper.INSTANCE.convertToProductResponseDt(productSave);
         objectLogger(className,methodName,productDto);
         finishLogger(className,methodName);
         return responseDto;
@@ -64,6 +62,6 @@ public class ProdutService {
 
     public ProductResponseDto update(Product product) {
 
-        return ProductMapper.INSTANCE.convertToProductResponseDto(productDao.save(product));
+        return ProductMapper.INSTANCE.convertToProductResponseDt(productDao.save(product));
     }
 }

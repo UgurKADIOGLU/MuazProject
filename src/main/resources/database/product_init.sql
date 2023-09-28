@@ -1,4 +1,4 @@
-INSERT INTO products (product_name, description, price, category, stock, is_active)
+INSERT INTO products (name, description, price, category, stock, is_active)
 VALUES ('elma', 'elma', 25.4, 'meyve', 30, true),
 ('armut', 'armut', 35.4, 'meyve', 15, true),
 ('muz', 'muz', 45.3, 'meyve', 7, true),

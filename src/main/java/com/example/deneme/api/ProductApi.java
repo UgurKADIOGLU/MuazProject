@@ -1,11 +1,11 @@
 package com.example.deneme.api;
-
 import com.example.deneme.converter.ProductMapper;
 import com.example.deneme.dto.ProductDto;
 import com.example.deneme.dto.ProductResponseDto;
 import com.example.deneme.dto.ProductUpdateDto;
 import com.example.deneme.entities.Product;
 import com.example.deneme.service.ProdutService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,8 +24,9 @@ public class ProductApi {
     }
 
     @PostMapping
-    public ProductResponseDto save(@RequestBody ProductDto productDto) {
+    public ProductResponseDto save(@Valid @RequestBody ProductDto productDto) {
         return produtService.save(productDto);
+
     }
     @GetMapping("{id}")
     public Product findById(@PathVariable Long id) {
@@ -41,7 +42,7 @@ public class ProductApi {
     }
     @PutMapping
     public ProductResponseDto update(ProductUpdateDto productUpdateDto){
-        Product product= ProductMapper.INSTANCE.convertToProduct(productUpdateDto);
+        Product product= ProductMapper.INSTANCE.convertToProducts(productUpdateDto);
         return produtService.update(product);
 
     }

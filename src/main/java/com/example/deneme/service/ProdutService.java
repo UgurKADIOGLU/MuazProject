@@ -8,25 +8,34 @@ import com.example.deneme.dto.ProductResponseDto;
 import com.example.deneme.entities.Product;
 import com.example.deneme.exception.ProductNameExistException;
 import com.example.deneme.exception.ProductNotFoundException;
+import com.example.deneme.helper.LogHelperService;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+
+import static com.example.deneme.helper.LogHelperService.*;
 
 @Service
 @RequiredArgsConstructor
 public class ProdutService {
     private final ProductDao productDao;
     private final ProductConverter productConverter;
-    //private final ProductMapper productMapper;
+    private final String className=this.getClass().getSimpleName();
 
     public ProductResponseDto save(ProductDto productDto) {
+        String methodName= getMethodName(new Throwable());
+        startLogger(className,methodName);
         if (productDao.existsByName(productDto.getName()))
             throw new ProductNameExistException(productDto.getName());
-        Product product = ProductMapper.INSTANCE.convertToProduct(productDto);
-        Product save = productDao.save(product);
 
-        return ProductMapper.INSTANCE.convertToProductResponseDto(save);
+        Product product = ProductMapper.INSTANCE.convertToProducts(productDto);
+        Product productSave = productDao.save(product);
+        ProductResponseDto responseDto=ProductMapper.INSTANCE.convertToProductResponseDto(productSave);
+        objectLogger(className,methodName,productDto);
+        finishLogger(className,methodName);
+        return responseDto;
     }
 
     public List<ProductResponseDto> findAll() {
@@ -41,6 +50,7 @@ public class ProdutService {
             RuntimeException exception = new ProductNotFoundException(id);
             return exception;
         });
+
         return product;
     }
 

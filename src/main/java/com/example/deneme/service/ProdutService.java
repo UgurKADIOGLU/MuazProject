@@ -3,6 +3,7 @@ package com.example.deneme.service;
 import com.example.deneme.converter.ProductConverter;
 import com.example.deneme.converter.ProductMapper;
 import com.example.deneme.dao.ProductDao;
+import com.example.deneme.dto.CategoryByIdWithProduct;
 import com.example.deneme.dto.ProductDto;
 import com.example.deneme.dto.ProductResponseDto;
 import com.example.deneme.entities.Product;
@@ -28,7 +29,7 @@ public class ProdutService {
         if (productDao.existsByName(productDto.getName()))
             throw new ProductNameExistException(productDto.getName());
 
-        Product product = ProductMapper.INSTANCE.convertToProdu(productDto);
+        Product product = ProductMapper.INSTANCE.convertToProdut(productDto);
         Product productSave = productDao.save(product);
         ProductResponseDto responseDto=ProductMapper.INSTANCE.convertToProductResponseDt(productSave);
         objectLogger(className,methodName,productDto);
@@ -61,7 +62,9 @@ public class ProdutService {
     }
 
     public ProductResponseDto update(Product product) {
-
         return ProductMapper.INSTANCE.convertToProductResponseDt(productDao.save(product));
+    }
+    public List<CategoryByIdWithProduct> find(Long id){
+        return ProductMapper.INSTANCE.CategoryByIdWithProductList(productDao.findAllByCategory_Id(id));
     }
 }

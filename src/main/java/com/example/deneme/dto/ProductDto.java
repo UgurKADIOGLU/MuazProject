@@ -1,13 +1,10 @@
 package com.example.deneme.dto;
-
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
-import org.antlr.v4.runtime.atn.AmbiguityInfo;
+
 
 @Builder
 @Data

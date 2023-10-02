@@ -1,5 +1,6 @@
 package com.example.deneme.api;
 import com.example.deneme.converter.ProductMapper;
+import com.example.deneme.dto.CategoryByIdWithProduct;
 import com.example.deneme.dto.ProductDto;
 import com.example.deneme.dto.ProductResponseDto;
 import com.example.deneme.dto.ProductUpdateDto;
@@ -42,8 +43,12 @@ public class ProductApi {
     }
     @PutMapping
     public ProductResponseDto update(ProductUpdateDto productUpdateDto){
-        Product product= ProductMapper.INSTANCE.convertToProdu(productUpdateDto);
+        Product product= ProductMapper.INSTANCE.convertToProdut(productUpdateDto);
         return produtService.update(product);
 
+    }
+    @GetMapping("/productWithCategory/{id}")
+    public List<CategoryByIdWithProduct> find(Long id){
+        return produtService.find(id);
     }
 }
